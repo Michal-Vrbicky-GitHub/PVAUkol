@@ -1,0 +1,42 @@
+﻿@page
+@model PVA_Zapoctovy_ukol.Pages.Credits.AddModel
+
+<h1>Add Credit</h1>
+
+<form method="post">
+    <div class="addContainer">
+        <div>
+            <label for="Value">Score:</label>
+            <input asp-for="Value" class="input" style="width: 50px"/>
+            <span asp-validation-for="Value" class="text-danger" style="display: block"></span>
+        </div>
+        <div>
+            <label for="Success">Success:</label>
+            <input type="checkbox" asp-for="Success"/>
+        </div>
+        <button type="submit">Add Credit</button>
+    </div>
+</form>
+
+<style>
+    .addContainer {
+        margin: 5px 0;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        width: 250px;
+        font-family: 'Arial', sans-serif;
+        font-size: 18px;
+    }
+
+    .addContainer > p:last-child {
+        margin-bottom: 0;
+    }
+
+    .text-danger {
+        color: red;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+</style>

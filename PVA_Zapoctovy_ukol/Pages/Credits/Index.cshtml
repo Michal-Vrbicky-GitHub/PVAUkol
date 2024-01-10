@@ -1,0 +1,26 @@
+﻿@page
+@model PVA_Zapoctovy_ukol.Pages.Credits.IndexModel
+
+<h1>Credits</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Created</th>
+            <th>Value</th>
+            <th>Success</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var credit in Model.Credits)
+        {
+            <tr>
+                <td>@credit.Id</td>
+                <td>@credit.Created</td>
+                <td>@credit.Value</td>
+                <td>@credit.Success</td>
+            </tr>
+        }
+    </tbody>
+</table>

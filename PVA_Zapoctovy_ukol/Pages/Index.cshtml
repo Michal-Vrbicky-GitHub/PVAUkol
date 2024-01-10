@@ -1,0 +1,66 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Úvodní strana";
+}
+
+<h1 class="display-4">Úvodní strana</h1>
+<div class="infoContainer">
+    <p class="label">Jméno:</p>
+    <p class="value">Michal</p>
+
+    <p class="label">Příjmení:</p>
+    <p class="value">Vrbický</p>
+
+    <p class="label">Třída:</p>
+    <p class="value">AIT2</p>
+
+    <p class="label">Obor:</p>
+    <p class="value">Systémový administrátor IT</p>
+
+    <p class="label">Kód oboru:</p>
+    <p class="value">26-47-N/16</p>
+</div>
+
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    .infoContainer {
+        margin: 5px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        display: grid;
+        column-gap: 10px;
+        grid-template-columns: max-content auto;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .infoContainer > p:last-child,
+    .infoContainer > p:nth-last-child(2) {
+        margin-bottom: 0;
+    }
+
+    .label {
+        text-align: right;
+        font-weight: bold;
+    }
+
+</style>
+
+
+
+
+
+
